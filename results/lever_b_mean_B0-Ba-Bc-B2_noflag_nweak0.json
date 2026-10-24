@@ -1,0 +1,116 @@
+[
+ {
+  "arm": "B0",
+  "planes": [
+   "sagittal"
+  ],
+  "dim": 768,
+  "mean": 0.609304090969929,
+  "sd": 0.0027864203604562625,
+  "aucs": [
+   0.611,
+   0.6054,
+   0.6115
+  ],
+  "per_target": {
+   "ACL": 0.5885,
+   "MCL": 0.3081,
+   "Medial Meniscus": 0.4657,
+   "Lateral Meniscus": 0.7071,
+   "Medial OA": 0.7425,
+   "Lateral OA": 0.7178,
+   "PF OA": 0.5782,
+   "Effusion": 0.7255,
+   "Synovitis": 0.563,
+   "Baker's": 0.6465,
+   "Contusion": 0.7086,
+   "Fracture": 0.5601
+  }
+ },
+ {
+  "arm": "Ba",
+  "planes": [
+   "axial"
+  ],
+  "dim": 768,
+  "mean": 0.6445532721364632,
+  "sd": 0.003344797786196973,
+  "aucs": [
+   0.6424,
+   0.6419,
+   0.6493
+  ],
+  "per_target": {
+   "ACL": 0.769,
+   "MCL": 0.3121,
+   "Medial Meniscus": 0.5929,
+   "Lateral Meniscus": 0.8002,
+   "Medial OA": 0.7967,
+   "Lateral OA": 0.6694,
+   "PF OA": 0.7264,
+   "Effusion": 0.807,
+   "Synovitis": 0.6563,
+   "Baker's": 0.6141,
+   "Contusion": 0.5219,
+   "Fracture": 0.4686
+  }
+ },
+ {
+  "arm": "Bc",
+  "planes": [
+   "coronal"
+  ],
+  "dim": 768,
+  "mean": 0.623343433698346,
+  "sd": 0.004112840954541444,
+  "aucs": [
+   0.6291,
+   0.6201,
+   0.6208
+  ],
+  "per_target": {
+   "ACL": 0.567,
+   "MCL": 0.5997,
+   "Medial Meniscus": 0.5369,
+   "Lateral Meniscus": 0.6724,
+   "Medial OA": 0.7686,
+   "Lateral OA": 0.6916,
+   "PF OA": 0.5676,
+   "Effusion": 0.6515,
+   "Synovitis": 0.4895,
+   "Baker's": 0.6714,
+   "Contusion": 0.6462,
+   "Fracture": 0.6179
+  }
+ },
+ {
+  "arm": "B2",
+  "planes": [
+   "sagittal",
+   "coronal",
+   "axial"
+  ],
+  "dim": 2304,
+  "mean": 0.637849230354317,
+  "sd": 0.002539333035147042,
+  "aucs": [
+   0.635,
+   0.6411,
+   0.6375
+  ],
+  "per_target": {
+   "ACL": 0.6987,
+   "MCL": 0.3735,
+   "Medial Meniscus": 0.513,
+   "Lateral Meniscus": 0.7743,
+   "Medial OA": 0.7854,
+   "Lateral OA": 0.7145,
+   "PF OA": 0.6264,
+   "Effusion": 0.8093,
+   "Synovitis": 0.5751,
+   "Baker's": 0.6781,
+   "Contusion": 0.6062,
+   "Fracture": 0.4997
+  }
+ }
+]

@@ -1,0 +1,118 @@
+[
+ {
+  "arm": "B0",
+  "planes": [
+   "sagittal"
+  ],
+  "dim": 769,
+  "mean": 0.7407570001357868,
+  "sd": 0.002572924950022758,
+  "aucs": [
+   0.7372,
+   0.7418,
+   0.7433
+  ],
+  "per_target": {
+   "ACL": 0.7448,
+   "MCL": 0.5563,
+   "Medial Meniscus": 0.7292,
+   "Lateral Meniscus": 0.747,
+   "Medial OA": 0.8856,
+   "Lateral OA": 0.734,
+   "PF OA": 0.7815,
+   "Effusion": 0.8445,
+   "Synovitis": 0.634,
+   "Baker's": 0.7441,
+   "Contusion": 0.7515,
+   "Fracture": 0.7366
+  }
+ },
+ {
+  "arm": "B1",
+  "planes": [
+   "sagittal",
+   "axial"
+  ],
+  "dim": 1538,
+  "mean": 0.7546424589638726,
+  "sd": 0.009926668331337062,
+  "aucs": [
+   0.7426,
+   0.7544,
+   0.7669
+  ],
+  "per_target": {
+   "ACL": 0.7839,
+   "MCL": 0.5461,
+   "Medial Meniscus": 0.6953,
+   "Lateral Meniscus": 0.6798,
+   "Medial OA": 0.9106,
+   "Lateral OA": 0.767,
+   "PF OA": 0.8231,
+   "Effusion": 0.8881,
+   "Synovitis": 0.6804,
+   "Baker's": 0.8303,
+   "Contusion": 0.7159,
+   "Fracture": 0.735
+  }
+ },
+ {
+  "arm": "B2",
+  "planes": [
+   "sagittal",
+   "coronal",
+   "axial"
+  ],
+  "dim": 2307,
+  "mean": 0.7626562348332689,
+  "sd": 0.0035903829178023003,
+  "aucs": [
+   0.7622,
+   0.7585,
+   0.7673
+  ],
+  "per_target": {
+   "ACL": 0.7782,
+   "MCL": 0.5934,
+   "Medial Meniscus": 0.7491,
+   "Lateral Meniscus": 0.6473,
+   "Medial OA": 0.9046,
+   "Lateral OA": 0.7912,
+   "PF OA": 0.7944,
+   "Effusion": 0.8587,
+   "Synovitis": 0.6925,
+   "Baker's": 0.8451,
+   "Contusion": 0.7636,
+   "Fracture": 0.7335
+  }
+ },
+ {
+  "arm": "Bca",
+  "planes": [
+   "coronal",
+   "axial"
+  ],
+  "dim": 1538,
+  "mean": 0.756569123816703,
+  "sd": 0.005840079470419789,
+  "aucs": [
+   0.7509,
+   0.7646,
+   0.7543
+  ],
+  "per_target": {
+   "ACL": 0.7435,
+   "MCL": 0.6682,
+   "Medial Meniscus": 0.7157,
+   "Lateral Meniscus": 0.6179,
+   "Medial OA": 0.8883,
+   "Lateral OA": 0.767,
+   "PF OA": 0.7741,
+   "Effusion": 0.8873,
+   "Synovitis": 0.6843,
+   "Baker's": 0.87,
+   "Contusion": 0.7817,
+   "Fracture": 0.6807
+  }
+ }
+]

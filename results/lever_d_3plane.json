@@ -1,0 +1,29 @@
+{
+ "arm": "3plane",
+ "planes": [
+  "sagittal",
+  "coronal",
+  "axial"
+ ],
+ "mean": 0.7458114479250995,
+ "sd": 0.008838452494275307,
+ "aucs": [
+  0.7359,
+  0.7442,
+  0.7573
+ ],
+ "per_target": {
+  "ACL": 0.7672,
+  "MCL": 0.6131,
+  "Medial Meniscus": 0.7474,
+  "Lateral Meniscus": 0.6531,
+  "Medial OA": 0.9106,
+  "Lateral OA": 0.771,
+  "PF OA": 0.7435,
+  "Effusion": 0.8128,
+  "Synovitis": 0.7295,
+  "Baker's": 0.8323,
+  "Contusion": 0.7242,
+  "Fracture": 0.645
+ }
+}

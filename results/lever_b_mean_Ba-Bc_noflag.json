@@ -1,0 +1,58 @@
+[
+ {
+  "arm": "Ba",
+  "planes": [
+   "axial"
+  ],
+  "dim": 768,
+  "mean": 0.7513987504027267,
+  "sd": 0.010509754933677682,
+  "aucs": [
+   0.7411,
+   0.7658,
+   0.7472
+  ],
+  "per_target": {
+   "ACL": 0.7756,
+   "MCL": 0.6123,
+   "Medial Meniscus": 0.7231,
+   "Lateral Meniscus": 0.6636,
+   "Medial OA": 0.8851,
+   "Lateral OA": 0.7374,
+   "PF OA": 0.875,
+   "Effusion": 0.8627,
+   "Synovitis": 0.6968,
+   "Baker's": 0.8828,
+   "Contusion": 0.6905,
+   "Fracture": 0.6119
+  }
+ },
+ {
+  "arm": "Bc",
+  "planes": [
+   "coronal"
+  ],
+  "dim": 768,
+  "mean": 0.7155933176885183,
+  "sd": 0.00890401818848763,
+  "aucs": [
+   0.7278,
+   0.7123,
+   0.7067
+  ],
+  "per_target": {
+   "ACL": 0.6987,
+   "MCL": 0.591,
+   "Medial Meniscus": 0.7027,
+   "Lateral Meniscus": 0.6223,
+   "Medial OA": 0.8797,
+   "Lateral OA": 0.7051,
+   "PF OA": 0.7116,
+   "Effusion": 0.8137,
+   "Synovitis": 0.6542,
+   "Baker's": 0.7508,
+   "Contusion": 0.7841,
+   "Fracture": 0.6732
+  }
+ }
+]
