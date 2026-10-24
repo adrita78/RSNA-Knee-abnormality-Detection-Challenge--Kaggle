@@ -1,5 +1,4 @@
 # RSNA-Knee-abnormality-Detection-Challenge--Kaggle
-https://www.kaggle.com/competitions/rsna-knee-abnormality-detection
 
     REPORT.md            what moved the number and what didn't. Start here.
     REPRODUCIBILITY.md   data, protocol, scripts, and the two traps that cost
