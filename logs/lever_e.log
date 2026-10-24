@@ -1,0 +1,9 @@
+convnext_small  ( 768-d) image labels only : 0.6446 +- 0.0033  [0.6424, 0.6419, 0.6493]
+convnext_small  ( 768-d) +1,720 weak       : 0.7514 +- 0.0105  [0.7411, 0.7658, 0.7472]
+resnet50        (2048-d) image labels only : 0.5958 +- 0.0026  [0.5928, 0.5954, 0.5992]
+resnet50        (2048-d) +1,720 weak       : 0.7325 +- 0.0037  [0.7342, 0.7274, 0.7359]
+convnext_base   (1024-d) image labels only : 0.6504 +- 0.0020  [0.6485, 0.6531, 0.6495]
+convnext_base   (1024-d) +1,720 weak       : 0.7611 +- 0.0090  [0.7682, 0.7668, 0.7484]
+
+convnext_small refs (axial, no flag): 0.6446 no-weak | 0.7514 +weak
+DONE

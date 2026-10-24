@@ -1,0 +1,6 @@
+clean=56  soft pool=1720
+features loaded
+n_soft=    0 w=1.0: PRIMARY(56-study CV, fixed 80 ep) 0.6093 +- 0.0028 [0.611, 0.6054, 0.6115] | SECONDARY(best-epoch) 0.6316 [0.6449, 0.6179, 0.632]
+n_soft= 1720 w=1.0: PRIMARY(56-study CV, fixed 80 ep) 0.7333 +- 0.0016 [0.7355, 0.7319, 0.7326] | SECONDARY(best-epoch) 0.7498 [0.7423, 0.7525, 0.7547]
+n_soft= 1720 w=0.3: PRIMARY(56-study CV, fixed 80 ep) 0.7258 +- 0.0091 [0.7364, 0.7142, 0.7268] | SECONDARY(best-epoch) 0.7471 [0.7529, 0.7388, 0.7496]
+DONE

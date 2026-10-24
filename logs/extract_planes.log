@@ -1,0 +1,25 @@
+studies needed: 1778
+
+coronal: 1706 of 1778 studies have such a series
+  coronal 200/1706
+  coronal 400/1706
+  coronal 600/1706
+  coronal 800/1706
+  coronal 1000/1706
+  coronal 1200/1706
+  coronal 1400/1706
+  coronal 1600/1706
+coronal DONE: 1706 cached, 0 failed
+
+axial: 1778 of 1778 studies have such a series
+  axial 200/1778
+  axial 400/1778
+  axial 600/1778
+  axial 800/1778
+  axial 1000/1778
+  axial 1200/1778
+  axial 1400/1778
+  axial 1600/1778
+axial DONE: 1778 cached, 0 failed
+
+ALL PLANES DONE

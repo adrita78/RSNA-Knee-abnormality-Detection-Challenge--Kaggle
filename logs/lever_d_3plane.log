@@ -1,0 +1,9 @@
+arm=3plane planes=['sagittal', 'coronal', 'axial'] device=cuda
+loading per-slice features...
+  sagittal: 1776/1776 present
+  coronal: 1704/1776 present
+  axial: 1776/1776 present
+
+HER ARCHITECTURE (3plane): 0.7458 +- 0.0088  [0.7359, 0.7442, 0.7573]
+mean-pool head refs: sagittal 0.7332 | axial 0.7514 | 3-plane 0.7627
+DONE

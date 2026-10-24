@@ -1,0 +1,7 @@
+arm=axial planes=['axial'] device=cuda
+loading per-slice features...
+  axial: 1776/1776 present
+
+HER ARCHITECTURE (axial): 0.7216 +- 0.0111  [0.7357, 0.7085, 0.7208]
+mean-pool head refs: sagittal 0.7332 | axial 0.7514 | 3-plane 0.7627
+DONE

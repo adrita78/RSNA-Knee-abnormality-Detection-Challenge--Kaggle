@@ -1,0 +1,6 @@
+aggregator=mean  arms=['B0', 'B2']
+  coronal: 1704/1776 studies have cached features
+  axial: 1776/1776 studies have cached features
+B0 ['sagittal'] dim=768: 0.7332 +- 0.0016  [0.7355, 0.7318, 0.7323]
+B2 ['sagittal', 'coronal', 'axial'] dim=2304: 0.7632 +- 0.0045  [0.7596, 0.7695, 0.7605]
+DONE
