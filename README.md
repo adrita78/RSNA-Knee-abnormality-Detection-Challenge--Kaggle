@@ -1,8 +1,5 @@
 # RSNA-Knee-abnormality-Detection-Challenge--Kaggle
 https://www.kaggle.com/competitions/rsna-knee-abnormality-detection
-# Handoff — RSNA 2026 knee abnormality detection
-
-Everything from the 2026-10-20 to 10-22 work, self-contained.
 
     REPORT.md            what moved the number and what didn't. Start here.
     REPRODUCIBILITY.md   data, protocol, scripts, and the two traps that cost
