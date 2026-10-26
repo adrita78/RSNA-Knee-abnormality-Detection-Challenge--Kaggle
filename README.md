@@ -1,4 +1,4 @@
-## Scripts and Reproducibility
+## Scripts
 
 ### Main Evaluation
 
@@ -32,6 +32,3 @@
 |---|---|
 | `extract_*.py` | Extracts and caches image features for downstream experiments. |
 
-### Reproducibility
-
-Experimental results are recorded in JSON files alongside the corresponding scripts and logs. See [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) for details on the evaluation protocol, experiment configurations, and result files.
