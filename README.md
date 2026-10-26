@@ -48,4 +48,13 @@ With the backbone frozen, only the classification head is trained. The table rep
 
 *Note: Convergence times are approximate and depend on hardware and implementation details.*
 
+## Peak AUC vs. Training Duration
 
+Extending training to 80 epochs did not improve performance over the peak validation AUC for any configuration. The table compares peak out-of-fold (OOF) AUC with the AUC at epoch 80.
+
+| Configuration | Peak AUC | Peak Epoch | AUC at Epoch 80 | AUC Change |
+|:---|---:|---:|---:|---:|
+| Sagittal / ConvNeXt-Small | 0.7396 | 37 | 0.7332 | -0.0064 |
+| Axial / ConvNeXt-Small | **0.7748** | 29 | 0.7514 | -0.0234 |
+| Axial / ConvNeXt-Base | 0.7715 | 58 | 0.7611 | -0.0104 |
+| Three Planes / ConvNeXt-Small | 0.7714 | 15 | 0.7632 | -0.0082 |
