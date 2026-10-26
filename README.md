@@ -47,11 +47,6 @@ With the backbone frozen, only the classification head is trained. The table rep
 | Axial / ConvNeXt-Base | 1024 | 268K | 11 | 0.14 s | ~1.5 s |
 | Three planes / ConvNeXt-Small | 2304 | 659K | 5 | 0.20 s | ~1.0 s |
 
-### Training Efficiency
-
-With a frozen backbone, training is limited to a lightweight classification head. A single fit converges in approximately **1 second on CPU**.
-
-The full training protocol (80 epochs × 5 folds × 3 seeds) takes approximately **3–5 minutes per configuration**.
 
 *Note: Convergence times are approximate and depend on hardware and implementation details.*
 
