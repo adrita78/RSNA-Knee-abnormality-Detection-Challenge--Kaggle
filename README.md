@@ -36,3 +36,23 @@ Developed machine learning models to detect 12 clinically important abnormalitie
 
 ## Runtime
 
+## Time to Convergence
+
+With the backbone frozen, only the classification head is trained. The table reports the number of epochs required to reach 99% of the final pooled out-of-fold (OOF) AUC, averaged over 3 random seeds using 5-fold cross-validation on 56 labeled studies.
+
+| Configuration | Feature Dim. | Head Parameters | Epochs to 99% | Time/Epoch/Fold | Time to Convergence |
+|:---|---:|---:|---:|---:|---:|
+| Sagittal / ConvNeXt-Small | 768 | 201K | 5 | 0.12 s | ~0.6 s |
+| Axial / ConvNeXt-Small | 768 | 201K | 7 | 0.12 s | ~0.8 s |
+| Axial / ConvNeXt-Base | 1024 | 268K | 11 | 0.14 s | ~1.5 s |
+| Three planes / ConvNeXt-Small | 2304 | 659K | 5 | 0.20 s | ~1.0 s |
+
+### Training Efficiency
+
+With a frozen backbone, training is limited to a lightweight classification head. A single fit converges in approximately **1 second on CPU**.
+
+The full training protocol (80 epochs × 5 folds × 3 seeds) takes approximately **3–5 minutes per configuration**.
+
+*Note: Convergence times are approximate and depend on hardware and implementation details.*
+
+
