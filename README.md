@@ -36,8 +36,6 @@ Developed machine learning models to detect 12 clinically important abnormalitie
 
 ## Runtime
 
-## Time to Convergence
-
 With the backbone frozen, only the classification head is trained. The table reports the number of epochs required to reach 99% of the final pooled out-of-fold (OOF) AUC, averaged over 3 random seeds using 5-fold cross-validation on 56 labeled studies.
 
 | Configuration | Feature Dim. | Head Parameters | Epochs to 99% | Time/Epoch/Fold | Time to Convergence |
