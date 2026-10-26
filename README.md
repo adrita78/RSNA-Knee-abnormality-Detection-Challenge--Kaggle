@@ -1,3 +1,5 @@
+Developed machine learning models to detect 12 clinically important abnormalities in knee MRI scans as part of the RSNA Knee MRI Abnormality Detection competition as part of the [Knee Abnormality Detection Challenge](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection).
+
 ## Scripts
 
 ### Main Evaluation
