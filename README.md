@@ -1,18 +1,37 @@
-## 6. Scripts, and what each one produces
+## Scripts and Reproducibility
 
-    milestone_head.py        label-count scaling on the 12-study split
-    final_eval.py            the headline 2x2: 0.609 -> 0.733  (PRIMARY and
-                             SECONDARY metrics)      -> weak/final_cv_results.json
-    final_model.py           ships the sagittal 0.733 checkpoint
-    final_model_axial.py     ships the axial checkpoint
-    final_model_b2.py        ships the 3-plane head
-    lever_a.py               slice aggregators       -> weak/lever_a_results.json
-    lever_b.py               planes; env NWEAK / NOFLAG switch the 2x2 and the
-                             flag control            -> weak/lever_b_*.json
-    lever_c.py               backbone fine-tune, WRITTEN AND SMOKE-TESTED, NOT
-                             RUN (see REPORT.md section on cost)
-    lever_d.py               Adrita's BiLSTM, her class verbatim
-                                                     -> weak/lever_d_3plane.json
-    lever_e.py               frozen-backbone sweep   -> weak/lever_e_backbones.json
-    extract_*.py             the feature caches above
-    inference.py             loads a head, writes submission.csv
+### Main Evaluation
+
+| Script | Description |
+|---|---|
+| `final_eval.py` | Compares image-only training with training augmented by report-derived labels using five-fold cross-validation. Results: `weak/final_cv_results.json`. |
+| `milestone_head.py` | Evaluates the effect of increasing the number of report-derived labels on the 12-study evaluation split. |
+| `inference.py` | Loads a trained model head and generates `submission.csv`. |
+
+### Model Configurations
+
+| Script | Description |
+|---|---|
+| `final_model.py` | Sagittal-plane model. |
+| `final_model_axial.py` | Axial-plane model. |
+| `final_model_b2.py` | Three-plane model. |
+
+### Ablation Studies
+
+| Script | Description |
+|---|---|
+| `lever_a.py` | Compares slice-aggregation methods. Results: `weak/lever_a_results.json`. |
+| `lever_b.py` | Compares MRI-plane configurations and the contribution of report-derived labels. Results: `weak/lever_b_*.json`. |
+| `lever_c.py` | Implements backbone fine-tuning. The script was smoke-tested, but the full experiment was not run. |
+| `lever_d.py` | Evaluates a BiLSTM-based multi-plane model with per-plane attention. Results: `weak/lever_d_3plane.json`. |
+| `lever_e.py` | Compares pretrained backbones using frozen feature extractors. Results: `weak/lever_e_backbones.json`. |
+
+### Feature Extraction
+
+| Script | Description |
+|---|---|
+| `extract_*.py` | Extracts and caches image features for downstream experiments. |
+
+### Reproducibility
+
+Experimental results are recorded in JSON files alongside the corresponding scripts and logs. See [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) for details on the evaluation protocol, experiment configurations, and result files.
