@@ -72,5 +72,6 @@ We provide trained model checkpoints from experiments on the RSNA Knee Abnormali
 | [`head_sagittal_0733.pt`](checkpoints/head_sagittal_0733.pt) | Classification head trained using sagittal MRI images. |
 | [`head_sagittal_imagelabels_0656.pt`](checkpoints/head_sagittal_imagelabels_0656.pt) | Classification head trained using sagittal MRI images with image-level labels. |
 
-**Note:** These checkpoints contain trained classification heads rather than complete standalone models. Inference requires the corresponding backbone architecture, compatible backbone weights, and preprocessing pipeline.
+*Note: Checkpoints contain classification heads only; inference requires the corresponding backbone and preprocessing.*
+
 
