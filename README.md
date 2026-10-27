@@ -58,3 +58,19 @@ Extending training to 80 epochs did not improve performance over the peak valida
 | Axial / ConvNeXt-Small | **0.7748** | 29 | 0.7514 | -0.0234 |
 | Axial / ConvNeXt-Base | 0.7715 | 58 | 0.7611 | -0.0104 |
 | Three Planes / ConvNeXt-Small | 0.7714 | 15 | 0.7632 | -0.0082 |
+
+
+## Trained Model Checkpoints
+
+We provide trained model checkpoints from experiments on the RSNA Knee Abnormality Detection challenge. These experiments explore different imaging planes, backbone architectures, and label sources for predicting 12 knee abnormalities from MRI scans.
+
+| Checkpoint | Description |
+|---|---|
+| [`head_3plane_weaklabels.pt`](checkpoints/head_3plane_weaklabels.pt) | Classification head trained using axial, sagittal, and coronal MRI images with additional weakly labeled training data. |
+| [`head_axial_0751.pt`](checkpoints/head_axial_0751.pt) | Classification head trained using axial MRI images. |
+| [`head_axial_convnext_base_0761.pt`](checkpoints/head_axial_convnext_base_0761.pt) | Classification head using a ConvNeXt-Base backbone with axial MRI images. |
+| [`head_sagittal_0733.pt`](checkpoints/head_sagittal_0733.pt) | Classification head trained using sagittal MRI images. |
+| [`head_sagittal_imagelabels_0656.pt`](checkpoints/head_sagittal_imagelabels_0656.pt) | Classification head trained using sagittal MRI images with image-level labels. |
+
+**Note:** These checkpoints contain trained classification heads rather than complete standalone models. Inference requires the corresponding backbone architecture, compatible backbone weights, and preprocessing pipeline.
+
