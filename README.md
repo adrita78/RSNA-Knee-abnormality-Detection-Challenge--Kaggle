@@ -74,4 +74,34 @@ We provide trained model checkpoints from experiments on the RSNA Knee Abnormali
 
 *Note: Checkpoints contain classification heads only; inference requires the corresponding backbone and preprocessing.*
 
+## Inference
+The inference script loads a trained classification head, reconstructs the corresponding pretrained backbone, performs study-level predictions from MRI slices, and generates a submission.csv file in the competition format.
+
+Python 3.7.0
+PyTorch-2.5.1
+CUDA Version 9.0
+CUDNN 7.0.5
+torchvision==0.20.1
+torchaudio==2.5.1
+
+## Requirements
+Run the following command from the repository root:
+
+python inference.py \
+    --head checkpoints/head_axial_0751.pt \
+    --data /path/to/rsna-knee-abnormality-detection \
+    --out submission.csv
+
+To disable fallback:
+
+python inference.py \
+    --head checkpoints/head_axial_0751.pt \
+    --data /path/to/rsna-knee-abnormality-detection \
+    --out submission.csv \
+    --no-fallback    
+
+## Output
+The script generates submission.csv containing one prediction per study and 12 probability columns corresponding to the competition targets:
+ACL, MCL, Medial Meniscus, Lateral Meniscus, Medial OA, Lateral OA, PF OA, Effusion, Synovitis, Baker's, Contusion, and Fracture. Predictions are obtained by extracting slice-level features using the pretrained backbone, averaging the features across slices within each study, and passing the pooled representation through the trained classification head.
+
 
