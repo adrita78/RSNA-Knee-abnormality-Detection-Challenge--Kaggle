@@ -92,6 +92,7 @@ python inference.py \
     --head checkpoints/head_axial_0751.pt \
     --data /path/to/rsna-knee-abnormality-detection \
     --out submission.csv
+```
 
 To disable fallback:
 ```bash
@@ -99,7 +100,8 @@ python inference.py \
     --head checkpoints/head_axial_0751.pt \
     --data /path/to/rsna-knee-abnormality-detection \
     --out submission.csv \
-    --no-fallback    
+    --no-fallback
+```
 
 ## Output
 The script generates submission.csv containing one prediction per study and 12 probability columns corresponding to the competition targets:
