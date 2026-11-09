@@ -73,9 +73,7 @@ We provide trained model checkpoints from experiments on the RSNA Knee Abnormali
 | [`head_sagittal_imagelabels_0656.pt`](checkpoints/head_sagittal_imagelabels_0656.pt) | Classification head trained using sagittal MRI images with image-level labels. |
 
 *Note: Checkpoints contain classification heads only; inference requires the corresponding backbone and preprocessing.*
-
-## Inference
-The inference script loads a trained classification head, reconstructs the corresponding pretrained backbone, performs study-level predictions from MRI slices, and generates a submission.csv file in the competition format.
+## Requirements
 
 - Python 3.7.0
 - PyTorch 2.5.1
@@ -83,8 +81,10 @@ The inference script loads a trained classification head, reconstructs the corre
 - torchaudio 2.5.1
 - CUDA 9.0
 - cuDNN 7.0.5
+  
+## Inference
+The inference script loads a trained classification head, reconstructs the corresponding pretrained backbone, performs study-level predictions from MRI slices, and generates a submission.csv file in the competition format.
 
-## Requirements
 Run the following command from the repository root:
 
 ```bash
